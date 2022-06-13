@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+}
+img{
+    margin-top: 20px;
+}
+p{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.747);
+    font-family: 'Lexend Deca';
+    display: block;
+}
+h1{
+    margin-top: 30px;
+    color: white;
+    font-family:'Big shoulders display';
+}
+button{
+    width: 150px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 70px 0px 10px 0px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: 'Lexend Deca';
+}
+.container-1{
+    padding: 20px 10%;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
+}
+.container-1 button{
+    color: hsl(31, 77%, 52%);
+}
+.container-2 button{
+    color: hsl(184, 100%, 22%);
+}
+.container-3 button{
+    color:hsl(179, 100%, 13%);
+}
+.container-1 button:hover{
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+}
+.container-2 button:hover{
+    color: white;
+    background-color:hsl(184, 100%, 22%);
+}
+.container-3 button:hover{
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+}
+.container-2{
+    padding: 20px 10%;;
+    background-color: hsl(184, 100%, 22%);
+}
+.container-3{
+    padding: 20px 10%;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+}
+footer{
+    width: 68%;
+    margin: auto;
+}
+footer button{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto;
+    background-image:linear-gradient(to right,hsl(31, 77%, 52%),hsl(184, 100%, 22%)) ;
+}
+footer button:hover{
+    background-image: linear-gradient(to right, hsl(184, 100%, 22%), hsl(179, 100%, 13%));
+}
+button a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+@media all and (min-width:800px) {
+    main{
+        width:750px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-1, .container-2, .container-3{
+        width: 100%;
+        padding:20px 5%;
+    }
+    .container-1{
+        border-radius: 20px 0px 0px 20px;
+    }
+    .container-3{
+        border-radius: 0px 20px 20px 0px;
+    }
+}
